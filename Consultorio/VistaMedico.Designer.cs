@@ -46,14 +46,16 @@
             this.rbActivos = new System.Windows.Forms.RadioButton();
             this.rbInactivos = new System.Windows.Forms.RadioButton();
             this.rbTodos = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.DGVDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(123, 54);
+            this.txtID.Location = new System.Drawing.Point(95, 15);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(187, 22);
@@ -62,7 +64,7 @@
             // txtNombres
             // 
             this.txtNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.Location = new System.Drawing.Point(123, 86);
+            this.txtNombres.Location = new System.Drawing.Point(95, 47);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(187, 22);
             this.txtNombres.TabIndex = 1;
@@ -70,14 +72,14 @@
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(123, 118);
+            this.txtApellidos.Location = new System.Drawing.Point(95, 79);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(187, 22);
             this.txtApellidos.TabIndex = 2;
             // 
             // dtpFechaIngreso
             // 
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(361, 74);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(317, 35);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaIngreso.TabIndex = 3;
@@ -86,7 +88,7 @@
             // 
             this.chkEstado.AutoSize = true;
             this.chkEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEstado.Location = new System.Drawing.Point(484, 100);
+            this.chkEstado.Location = new System.Drawing.Point(440, 61);
             this.chkEstado.Name = "chkEstado";
             this.chkEstado.Size = new System.Drawing.Size(79, 24);
             this.chkEstado.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 53);
+            this.label1.Location = new System.Drawing.Point(14, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 27);
             this.label1.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 86);
+            this.label2.Location = new System.Drawing.Point(18, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 27);
             this.label2.TabIndex = 6;
@@ -117,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 115);
+            this.label3.Location = new System.Drawing.Point(17, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 27);
             this.label3.TabIndex = 7;
@@ -127,7 +129,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(357, 50);
+            this.label4.Location = new System.Drawing.Point(313, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 27);
             this.label4.TabIndex = 8;
@@ -219,26 +221,35 @@
             this.rbTodos.UseVisualStyleBackColor = true;
             this.rbTodos.CheckedChanged += new System.EventHandler(this.rbTodos_CheckedChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.txtID);
+            this.panel1.Controls.Add(this.txtNombres);
+            this.panel1.Controls.Add(this.txtApellidos);
+            this.panel1.Controls.Add(this.chkEstado);
+            this.panel1.Controls.Add(this.dtpFechaIngreso);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(47, 45);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(535, 115);
+            this.panel1.TabIndex = 16;
+            // 
             // VistaMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(630, 401);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.rbTodos);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.dtpFechaIngreso);
             this.Controls.Add(this.DGVDatos);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.chkEstado);
-            this.Controls.Add(this.txtApellidos);
-            this.Controls.Add(this.txtNombres);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.rbActivos);
             this.Controls.Add(this.rbInactivos);
             this.Name = "VistaMedico";
@@ -247,6 +258,8 @@
             this.Load += new System.EventHandler(this.VistaMedico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +284,6 @@
         private System.Windows.Forms.RadioButton rbTodos;
         private System.Windows.Forms.RadioButton rbActivos;
         private System.Windows.Forms.RadioButton rbInactivos;
+        private System.Windows.Forms.Panel panel1;
     }
 }
